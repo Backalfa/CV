@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+*::selection{
+    background-color: #ffc7e3;
+}
+[class*="col-"] {
+    float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*background site*/
+header{
+    background-image: url("https://i.imgur.com/XDc1NPk.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 5px;
+}
+article{
+    background-image: url("https://www.pcclean.io/wp-content/uploads/2020/4/ZB3uqq.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #D4242F;
+    position: center;
+}
+footer{
+    overflow: hidden;
+    background-image: url(https://i.imgur.com/R2i9X1q.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+}
+/*Titulo*/
+.titlefontface{
+    color: #D4242F;
+    text-align: center;
+    font-size: 150px;
+    text-shadow: 10px 10px #000000;
+}
+.shadow {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    width: 1200px;
+    height: 50px;
+    transition: 0.4s;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  }  
+/*Barra de Navegação*/
+.home, .sobre, .contactos, .dropbtn{
+    font-weight: bold;
+    text-shadow: 1px 1px #ffffff;
+}
+.dropbtn:hover{
+    text-shadow: 1px 1px #D4242F;
+}
+.navbar a {
+    float: left;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 14px 16px;
+}
+.dropdown .dropbtn {
+    font-size: 25px;   
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffffff ;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 12px;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 12px;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Barra de navegação pesquisa*/
+.navbar form{
+    float: right;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*Artigo*/
+article{
+    text-align: center;
+    color: #ffffff;
+    font-size:30px;
+    padding-top: 15px;
+}
+/*News*/
+.fastnews{
+    width: 100%;;
+}
+.buy{
+    padding: 10px;
+    width: 15%;
+}
+/*Edição dos quadros*/
+.albuns img{
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+}
+.albuns span img{
+    border-radius: 50px;
+}
+/*Membros*/
+.members a{
+    text-decoration: none;
+    color: #ffff;
+}
+.name{
+    padding: 30px;
+}
+/*Membros shadown*/
+.member{
+    animation: mymove 5s infinite;
+    width: auto;
+    height: 300px;
+    border-radius: 5%;
+}
+@keyframes mymove{
+    50% {box-shadow: 10px 20px 30px #D4242F;;}
+}
+/*Footer Geral*/
+footer{
+    color: #9f9f9f;
+}
+#coluna1 h3, #coluna2 h3, #coluna3 h3, #coluna4 h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row a:hover{
+    font-weight: bold;
+}
+/*footer divs col*/
+/*coluna 1*/
+#email, #date{
+    padding: 10px;
+}
+#email{
+    width: 34%;
+}
+.submit{
+    padding: 10px;
+    width: 80%;
+}
+#coluna1 input{
+    background-color: #9f9f9f;
+}
+/*Coluna 2 3 4*/
+#coluna2 a, #coluna3 a, #coluna4 a{
+    text-decoration: none;
+    color: #9f9f9f;
+}
+/*footer links*/
+.fafa{
+    font-size: 30px;
+}
+.fafa i{
+    padding: 10px;
+}
+/*Footer Terms of Use*/
+.FooterMenu{
+    position: absolute;
+    float: center;
+}
+.FooterMenu a{
+    text-decoration: none;
+    color: #9f9f9f;
+    padding: 15px;
+}
+.FooterMenu a:hover{
+    font-weight: bold;
+}

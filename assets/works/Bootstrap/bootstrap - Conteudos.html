@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+<html lang="pt">  
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="UT-8">
+        <meta name="description" content="Bootstrap">  
+        <meta name="author" content="Miguel Sá">
+        <link rel="stylesheet" href="style-boostrap.css">
+        <meta name="viewport" content="widt=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid" id="header">
+            <div class="row">
+                <div class="col-sm-2" id="logo">Logo</div>
+                <div class="col-sm-10">Nome</div>
+            </div>
+        </div>
+        <div class="container-fluid" id="menu">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="nav nav-tabs">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Serviços</a>
+                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contactos</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="conteudo">
+            <div class="row">
+                <div class="col-sm-4">
+                    <table class="table table-striped table-dark" id="table">
+                        <thead>
+                            <tr>
+                                <th>Serviço</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Webdesign</td>
+                                <td>25 euros/h</td>
+                            </tr>
+                            <tr>
+                                <td>Fotografia</td>
+                                <td>100 euros/sessão</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-4" id="serv-2">
+                    <img src="Love_My_Job.jpg" class="img-fluid" id="loveimg" alt="Love my Job">
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-warning" id="botao_warning">I am Warning</button>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="col-sm-3">Contacto</div>
+                <div class="col-sm-3">Social Media</div>
+                <div class="col-sm-3">Localização</div>
+                <div class="col-sm-3">Politica de privacidade</div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer-2">
+            <div class="row">
+                <div class="col-sm-12"> Copyright &copy; 2022 Miguel Sá. Todos os direitos reservados. </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>

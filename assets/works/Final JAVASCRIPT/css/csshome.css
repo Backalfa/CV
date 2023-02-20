@@ -1,0 +1,114 @@
+/* -------------------- POSICIONAMENTO -------------------- */
+.container{
+    position: relative;
+}
+.container img{
+    width: 100%;
+    height: auto;
+    z-index: -999;
+}
+.topleft{
+    position:absolute;
+    top:8px;
+    left:16px;
+    font-size: 18px;
+}
+.topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+.bottomleft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+.bottomright{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+/* -------------------- TÍTULO / HEADER -------------------- */
+.titulo{
+    text-align: center;
+    margin-top: 50px;
+}
+.titulo1{
+    font-family: fontmain;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #B989F9;
+}
+.titulo2{
+    font-family: fontmain;
+    color: #DE77EC;
+}
+.read{
+    color: #ffffff;
+    font-size: 24px;
+    border: 2px solid transparent;
+    text-align: center;
+    width: 120px;
+    height: auto;
+    background-image: linear-gradient(to right, #FE0279, #E820B4, #DA3FF8);
+    border-radius: 20px;
+}
+/* -------------------- SERVICE -------------------- */
+.titleservice h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: fontmain;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #DA3FF8;
+    text-shadow: 2px 2px #000000;
+}
+.boxservice{
+    border-radius: 3%;
+    position: relative;
+    height: 500px;
+    background-color: #ffff;
+}
+.boxservice:hover{
+    filter: drop-shadow(10px 10px 20px #DA3FF8);
+}
+.servicetitle{
+    margin-top: 20px;
+    text-align: center;
+    font-family: fontmain;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #B989F9;
+    text-shadow: 2px 2px #000000;
+}
+.button_read_service{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    bottom: 8px;
+    
+}
+.serviceRead{
+    color: #ffffff;
+    font-size: 24px;
+    border: 2px solid transparent;
+    text-align: center;
+    width: 180px;
+    height: auto;
+    background-image: linear-gradient(to right, #FE0279, #E820B4, #DA3FF8);
+    border-radius: 20px;
+}

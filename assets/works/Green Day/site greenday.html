@@ -1,0 +1,174 @@
+<!DOCTYPE html>  
+<html lang="pt">  
+    <head>
+        <title>Green Day</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="All about Green Day. Includes news, tour dates, songs to buy, and more!">  
+        <meta name="author" content="Miguel Sá">
+        <meta name="keywords" content="Green Day, Green">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/d132031da6.js" crossorigin="anonymous"></script>
+        <style>
+            @font-face{
+                font-family: myfont;
+                src: url(fonts/GrindAndDeathDemo.ttf);
+            }
+            @font-face{
+                font-family: myfonte;
+                src: url(fonts/Neoradical.ttf);
+            }
+            @font-face{
+                font-family: mifont;
+                src: url(fonts/WrongFreeTrial.otf);
+            }
+            .titlefontface{
+                font-family: myfont;
+            }
+            article h2{
+                font-family: myfonte;
+                font-size: 80px;
+            }
+            .name, .local{
+                font-family: mifont;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1 class="titlefontface">Green Day</h1>
+                <div class="shadow"></div>
+            </div>
+        </header>
+        <nav class="navbar">
+            <a href="#" class="home">Home</a>
+            <div class="dropdown">
+                <buttom class="dropbtn">Tour's</buttom>
+                <div class="dropdown-content">
+                    <a href="https://greenday.com/tour">2022</a>
+                    <a href="#">2023</a>
+                </div>
+            </div>
+            <form >
+                <input type="search" id="search" name="search" placeholder="Find More...">
+                <label for="search" class="search"><i class="fa fa-search" style="color: white"></i></label>
+            </form>
+        </nav>
+        <article>
+            <div class="news">
+                <h2>New's</h2>
+                <div class="fastnews">
+                    <hr style="color:#9f9f9f; width: 70%;">
+                    <div class="new1">
+                        <span class="local">
+                            <div class="day">AUG 6, 2022</div>
+                            <span class="festival" style="margin-right: 100px;">OUTSIDE LANDS</span>
+                            <span>SAN FRANCISCO, CA</span>
+                        </span>
+                        <span class="ticket">
+                            <form action="https://sfoutsidelands.com/" target="_blank"><input type="submit" class="buy" value="Buy Now"></form>
+                        </span>
+                    </div>
+                    <hr style="color:#9f9f9f; width: 70%;">
+                    <div class="new2">
+                        <span class="local">
+                            <div class="day">SEP 9, 2022</div>
+                            <span class="festival" style="margin-right: 100px;">ROCK IN RIO</span>
+                            <span>BARRA DA TIJUCA, BRAZIL</span>
+                        </span>
+                        <span class="ticket">
+                            <form action="https://rockinrio.com/rio/pt-br/home/" target="_blank"><input type="submit" class="buy" value="Buy Now"></form>
+                        </span>
+                    </div>
+                    <hr style="color:#9f9f9f; width: 70%;">
+                </div>
+            </div>
+            <div class="albuns">
+                <h2>Albuns</h2>
+                <div>
+                    <span><a target="_blank" href="https://pt.wikipedia.org/wiki/Dookie"><img src="img/Albuns/dookei(1994).jpg" alt="dookei"></a></span>
+                    <span><a target="_blank" href="https://en.wikipedia.org/wiki/Warning_(Green_Day_album)"><img src="img/Albuns/Warning(2000).jpg" alt="warning"></a></span>
+                    <span><a target="_blank" href="https://pt.wikipedia.org/wiki/American_Idiot"><img src="img/Albuns/AmericanIdiot(2004).jpg" alt="americanidiot"></a></span>
+                    <span><a target="_blank" href="https://pt.wikipedia.org/wiki/21st_Century_Breakdown"><img src="img/Albuns/21st_Century_Breakdown(2009).jpg" alt="breakdown"></a></span>
+                </div>
+                <div>
+                    <span><a target="_blank" href="https://pt.wikipedia.org/wiki/%C2%A1Uno!"><img src="img/Albuns/Uno(2012).jpg" alt="uno"></a></span>
+                    <span><a target="_blank" href="https://en.wikipedia.org/wiki/Father_of_All_Motherfuckers"><img src="img/Albuns/Father_of_All_Motherfuckers(2020).jpg" alt="motherfukers"></a></span>
+                    <span><a target="_blank" href="https://en.wikipedia.org/wiki/Awesome_as_Fuck"><img src="img/Albuns/Awesome_as_Fuck(2011).jpg" alt="awesomefuck"></a></span>
+                </div>
+            </div>
+            <div class="members">
+                <h2>Members</h2>
+                <div class="row" id="members">
+                    <span class="col-4">
+                        <a href="https://pt.wikipedia.org/wiki/John_Kiffmeyer" target="_blank">
+                            <img alt="John_John_Kiffmeyer" class="member" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/John_Kiffmeyer_1990.png/375px-John_Kiffmeyer_1990.png">
+                            <div class="name">John Kiffmeyer</div>
+                        </a>
+                    </span>
+                    <span class="col-4">
+                        <a href="https://pt.wikipedia.org/wiki/Billie_Joe_Armstrong" target="_blank">
+                            <img alt="Billie_Joe_Armstrong" class="member" src="https://i.imgur.com/tgKPUz8.jpeg">
+                            <div class="name">Billie Joe Armstrong</div>
+                        </a>
+                    </span>
+                    <span class="col-4">
+                        <a href="https://pt.wikipedia.org/wiki/Jason_White" target="_blank">
+                            <img alt="Jason_White" class="member" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Jason_White_2009.jpg/300px-Jason_White_2009.jpg">
+                            <div class="name">Jason White</div>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <hr>
+            <div class="row">
+                <div class="col-6" id="coluna1">
+                    <h3>Don't Miss Out</h3>
+                    <p>Sign up for the latest coupons, acess store</p> 
+                    <form >
+                        <label for="email" class="email">Email Adress*</label>
+                        <input type="email" id="email" name="email">
+                        <label for="date" class="date">Birthday*</label>
+                        <input type="date" id="date" name="date">
+                        <p><input type="submit" class="submit" value="Log In"></p>
+                    </form>
+                    <p>*Required information</p>
+                </div>
+                <div class="col-2" id="coluna2">
+                    <h3>Company</h3>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#"></a></p>
+                </div>
+                <div class="col-2" id="coluna3">
+                    <h3>Costumer Service</h3>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Creat Acount</a></p>
+                    <p><a href="#">My Acount</a></p>
+                    <p><a href="#">Store Locator</a></p>
+                    <p><a href="#">Redeem Rewards</a></p>
+                </div>
+                <div class="col-2" id="coluna4">
+                    <h3>More to Explore</h3>
+                    <p><a href="#">Offers</a></p>
+                </div>
+            </div>
+            <div class="fafa">
+                <a href="https://www.instagram.com/greenday/"><i class="fa fa-instagram" style="color:#9f9f9f"></i></a>
+                <a href="https://twitter.com/greenday"><i class="fa fa-twitter" style="color:#9f9f9f"></i></a>
+                <a href="https://www.youtube.com/channel/UCqC_GY2ZiENFz2pwL0cSfAw"><i class="fa fa-youtube" style="color:#9f9f9f"></i></a>
+                <a href="https://www.facebook.com/GreenDay"><i class="fa fa-facebook" style="color:#9f9f9f"></i></a>
+            </div>
+            <hr style="color:#9f9f9f">
+            <nav class="FooterMenu">
+                <a href="#">Help</a>
+                <a href="#">Returns</a>
+                <a href="#">Credits</a>
+                <a href="#">Term of Use</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+        </footer>
+    </body>
+</html>

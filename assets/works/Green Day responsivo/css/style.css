@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background-image: url("https://i.imgur.com/UzbhIcU.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#center{
+    text-align: center;
+}
+/* ------------------------ navbar ------------------------ */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: 20px;
+}
+.navtop{
+    font-family: myfonte;
+    font-size: 20px;
+}
+/* ------------------------ Header ------------------------ */
+.titlefontface{
+    font-family: myfont;
+    color: #D4242F;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 150px;
+    text-shadow: 10px 10px #000000;
+}
+.simblo{
+    text-align: center;
+}
+/* ------------------------ Barras ------------------------ */
+.bar{
+    margin-top: 120px;
+    text-align: center;
+}
+/* ------------------------ New's Title ------------------------ */
+.newtitle{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 100px;
+    font-family: myfonte;
+}
+/* ------------------------ New's ------------------------ */
+.uppercase{
+    text-transform: uppercase;
+}
+.new div img{
+    width: 100%;
+    height: 320px;
+}
+.fontnew{
+    font-family: myfonte;
+}
+/* ------------------------ Barra full ------------------------ */
+.barfull{
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+}
+/* ------------------------ Members ------------------------ */
+#carouselExampleControls{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 50%;
+}
+.members img{
+    height: 400px;
+}
+#setas{
+    background-color: transparent;
+    border: transparent;
+}
+.members h5{
+    font-family: mifont;
+    font-size: xx-large;
+    text-shadow: 3px 3px #000000;
+}
+/* ------------------------ Footer ------------------------ */
+
+footer{
+    overflow: hidden;
+    background-image: url(https://i.imgur.com/R2i9X1q.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+    color: #9f9f9f;
+    font-family: myfonte;
+}
+/* ---------- footer log in ---------- */
+.space{
+    padding: 10px;
+    width: 60%;
+}
+/* ---------- footer links ---------- */
+.fafa{
+    font-size: 30px;
+    text-align: center;
+}
+.fafa i{
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* ---------- Terms of Use ---------- */
+.FooterMenu{
+    position: absolute;
+    float: center;
+}
+.FooterMenu a{
+    text-decoration: none;
+    color: #9f9f9f;
+    padding: 15px;
+}
+.FooterMenu a:hover{
+    font-weight: bold;
+}

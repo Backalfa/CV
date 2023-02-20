@@ -1,0 +1,95 @@
+/* -------------------- HTML -------------------- */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.center{
+    text-align: center;
+}
+.grey{
+    color: #9f9f9f;
+}
+.green{
+    color: rgb(0, 128, 0);
+}
+.red{
+    color: rgb(255, 0, 0);
+}
+.top25{
+    margin-top: 25px;
+}
+.top150{
+    margin-top: 150px;
+}
+.down25{
+    margin-bottom: 25px;
+}
+.hidden{
+    visibility: hidden;
+}
+.margin_left_25{
+    margin-left: 25px;
+}
+.margin_right_25{
+    margin-right: 25px;
+}
+/* -------------------- NAVBAR -------------------- */
+.navbar{
+    background-color: rgba(255, 255, 255, 0.747);
+    padding: 20px;
+}
+.navtop{
+    font-family: fontnav;
+    font-size: 20px;
+}
+.gap{ 
+    display: flex;
+    gap:20px;
+}
+.navbar ul li{
+    text-align: center;
+    width: 240px;
+    height: auto;
+    background-image: linear-gradient(to left, #B38BFDd0,#D57BEDd0,#FF69DFd0);
+    border-radius: 20px;
+}
+/* -------------------- FOOTER -------------------- */
+footer{
+    padding: 80px;
+    color: #9f9f9f;
+    font-family: myfonte;
+}
+/* -------------------- TERMS OF USE -------------------- */
+.FooterMenu{
+    position: absolute;
+    float: center;
+}
+.FooterMenu a{
+    text-decoration: none;
+    color: #9f9f9f;
+    padding: 15px;
+}
+.FooterMenu a:hover{
+    font-weight: bold;
+}

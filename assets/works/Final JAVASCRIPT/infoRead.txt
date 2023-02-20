@@ -1,0 +1,13 @@
+{
+"geral":[{
+"titulo": "Notícias",
+"descricao": "Formando em Web Design",
+"for": "Pela",
+"imagem": "MasterD"
+
+
+
+
+}
+]
+}
