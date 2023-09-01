@@ -59,8 +59,6 @@
             <a href="project_2.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">Beatriz Miranda Oriflame</a>
             <a href="project_3.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">All Games</a>
             <a href="project_4.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">Green Day</a>
-            <a href="project_5.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">Trival Wars/Discord Attack Detector</a>
-            <a href="project_6.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">Trival Wars Calculate Blocked Players</a>
         </div>
 
         <script>
@@ -81,9 +79,28 @@
         <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
             <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
                 <a href="../index.html" class="w3-bar-item w3-button" style="width: 25% !important;">HOME</a>
-                <a href="#projects" class="w3-bar-item w3-button" style="width: 25% !important;">PROJECTS</a>
+                <div class="w3-dropdown-click">
+                    <button onclick="open_menu_small()" class="w3-button w3-black">PROJECTS</button>
+                    <div id="menu_small" class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="project_1.html" class="w3-button w3-block w3-left-align w3-hover-black">JavaScript/Ajax</a>
+                        <a href="project_2.html" class="w3-button w3-block w3-left-align w3-hover-black">Beatriz Miranda Oriflame</a>
+                        <a href="project_3.html" class="w3-button w3-block w3-left-align w3-hover-black">All Games</a>
+                        <a href="project_4.html" class="w3-button w3-block w3-left-align w3-hover-black">Green Day</a>
+                    </div>
+                  </div>
             </div>
         </div>
+        <script>
+            function open_menu_small() {
+              var x = document.getElementById("menu_small");
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+        </script>
+        
 
         <!-- Page Content -->
         <div class="w3-padding-large" id="main">
