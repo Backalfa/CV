@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CV - Miguel Sá</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="website icon" type="png" href="../imgs/Logo.png" />
+        <link rel="stylesheet" href="../css/w3-main.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body, h1, h2, h3, h4, h5, h6 {
+                font-family: "Montserrat", sans-serif;
+            }
+            .w3-row-padding img {
+                margin-bottom: 12px;
+            }
+            /* Set the width of the sidebar to 120px */
+            .w3-sidebar {
+                width: 120px;
+                background: #222;
+            }
+            /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+            #main {
+                margin-left: 120px;
+            }
+            /* Remove margins from "page content" on small screens */
+            @media only screen and (max-width: 600px) {
+                #main {
+                    margin-left: 0;
+                }
+            }
+        </style>
+    </head>
+    <body class="w3-black">
+        <!-- Barra lateral esquerda existente -->
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>HOME</p>
+            </a>
+
+            <!-- Botão para abrir a barra lateral direita -->
+            <button id="open-right-sidebar" type="button" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i class="fa fa-briefcase w3-xxlarge"></i>
+                <p>PROJECTS</p>
+            </button>
+        </nav>
+
+        <!-- Barra lateral direita oculta -->
+        <div id="right-sidebar" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-sidebar-right" style="width: 0;">
+            <button id="close-right-sidebar" type="button" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i class="fa fa-close w3-xxlarge"></i>
+            </button>
+            <a href="project_1.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">JavaScript/Ajax</a>
+            <a href="project_2.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">Beatriz Miranda Oriflame</a>
+            <a href="project_3.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">All Games</a>
+            <a href="project_4.html" class="w3-button w3-block w3-left-align w3-padding-32 w3-hover-black">Green Day</a>
+        </div>
+
+        <script>
+            // Abrir a barra lateral direita quando o botão é clicado
+            document.getElementById("open-right-sidebar").addEventListener("click", function() {
+                document.getElementById("right-sidebar").style.width = "250px";
+            });
+
+            // Fechar a barra lateral direita quando o botão de fechar é clicado
+            document.getElementById("close-right-sidebar").addEventListener("click", function() {
+                document.getElementById("right-sidebar").style.width = "0";
+            });
+        </script>
+
+        
+        <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+                <a href="../index.html" class="w3-bar-item w3-button" style="width: 25% !important;">HOME</a>
+                <div class="w3-dropdown-click">
+                    <button onclick="open_menu_small()" class="w3-button w3-black">PROJECTS</button>
+                    <div id="menu_small" class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="project_1.html" class="w3-button w3-block w3-left-align w3-hover-black">JavaScript/Ajax</a>
+                        <a href="project_2.html" class="w3-button w3-block w3-left-align w3-hover-black">Beatriz Miranda Oriflame</a>
+                        <a href="project_3.html" class="w3-button w3-block w3-left-align w3-hover-black">All Games</a>
+                        <a href="project_4.html" class="w3-button w3-block w3-left-align w3-hover-black">Green Day</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function open_menu_small() {
+            var x = document.getElementById("menu_small");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+            }
+        </script>
+
+        <!-- Page Content -->
+        <div class="w3-padding-large" id="main">
+            
+            <!-- Grid Open -->
+            <div class="w3-row" style="margin-top: 150px;">
+                <div class="w3-col s12 m12 l6">
+                    <div class="w3-container">
+                        <div class="w3-content w3-section" style="max-width:500px">
+                            <img class="mySlides" src="../imgs/projects/4/1.jpeg" style="width: 100%; border-radius: 10px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col s12 m12 l4">
+                    <div class="w3-padding-32">
+                        <h3>Website Description</h3>
+                        <hr>
+                        <p class="w3-text-grey">Website, which is part of the course, with only the home page completed.</p>
+                    </div>
+                    <div class="w3-padding-32">
+                        <h3>Website Download</h3>
+                        <hr>
+                        <spam class="w3-text-grey">
+                            <a href="../download/4.rar" download title="Virus-free download"><img src="../imgs/download.png" style="width: 50%;"></a><br><br>
+                        </spam>
+                    </div>
+                </div>
+            </div>
+
+        <!-- END PAGE CONTENT -->
+        </div>
+
+        <script>
+        //Slides PC
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000); // Change image every 4 seconds
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
