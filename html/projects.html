@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV - Miguel Sá</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="website icon" type="png" href="../imgs/iconlogo.png" />
+        
+        <!-- Comentários -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="../css/comentarios.css">
+
+        <!-- Main Style -->
+        <link rel="stylesheet" href="../css/w3-main.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+
+        <!-- Progress Circle -->
+        <link rel="stylesheet" href="../css/progress_circle.css">
+
+        <!-- Nav bar -->
+        <link rel="stylesheet" href="../css/navbar.css" />
+
+        <!-- langpage -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic'>
+        <link rel="stylesheet" href="../css/landingspage.css">
+        
+        <!-- Carrosel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+
+    </head>
+    <body>
+        <!-- Sidebar/menu -->
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer;" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main">
+
+            <!-- Push down content on small screens -->
+            <div class="w3-hide-large" style="margin-top: 83px;"></div>
+
+            <!-- Nav Bar -->
+            <div class="">
+                <header class="w3-container w3-xlarge w3-hide-small w3-hide-medium">
+                    <div class="et-hero-tabs-container">
+                        <a class="et-hero-tab" href="../index.html">Home</a>
+                        <a class="et-hero-tab" href="projects.html">Projects</a>
+                        <a class="et-hero-tab" href="#contact">Contact</a>
+                    </div>
+                </header>
+                <!-- Top menu on small screens -->
+                <div class="w3-hide-large">
+                    <nav class="w3-sidebar w3-animate-top w3-xxlarge small_screen_top" style="display:none;" id="mySidebar">
+                        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xxlarge w3-padding w3-display-topright navbar_remove" style="padding:6px 24px">
+                        <i class="fa fa-remove"></i>
+                        </a>
+                        <div class="w3-bar-block w3-center w3-padding-64">
+                        <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+                        <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+                        <a href="#contact" class="w3-bar-item w3-button">Projects</a>
+                        </div>
+                    </nav>
+                    <div class="w3-opacity small_screen_top">
+                        <span class="w3-button w3-xxlarge w3-right navbar_remove" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+                        <div class="w3-clear"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image header -->
+            <div class="container w3-display-container">
+                <div class="w3-display-topleft"><img src="../imgs/logomain.png" alt="logotipo" style="width: 50%;height: auto; margin: 20% 0 0 20%;"></div>
+                <div class="container__item landing-page-container">
+                    <div class="content__wrapper">
+                        <header class="header">
+                        </header>
+                        <p class="coords">N 49° 16' 35.173" / W 0° 42' 11.30"</p>
+                        <div class="ellipses-container">
+                            <h2 class="greeting">Miguel Sá</h2>
+                            <h2 class="sub-greeting">Developer / Webdesign</h2>
+                            <div class="ellipses ellipses__outer--thin">
+                                <div class="ellipses ellipses__orbit"></div>
+                            </div>
+                            <div class="ellipses ellipses__outer--thick"></div>
+                        </div>
+                        <div class="scroller w3-hide-medium w3-hide-small">
+                            <p class="page-title">Projects</p>
+                            <div class="timeline">
+                                <span class="timeline__unit"></span>
+                                <span class="timeline__unit timeline__unit--active"></span>
+                                <span class="timeline__unit"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div id="projects">
+                <main>
+                    <div class="header">
+                        <h1 class="">My Projects</h1>
+                        <p>I made these small projects for my webdesign course.</p>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="../imgs/projects/2.png" alt="" />
+                            <div class="overlay">
+                                <span></span>
+                                <div>
+                                    <h2>Beatriz Miranda Oriflame</h2>
+                                    <p>Date: 07/2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../imgs/projects/3.png" alt="" />
+                            <div class="overlay">
+                                <span></span>
+                                <div>
+                                    <h2>All Games</h2>
+                                    <p>Date: 05/2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../imgs/projects/1.png" alt="" />
+                            <div class="overlay">
+                                <span></span>
+                                <div>
+                                    <h2>Javascript/Ajax</h2>
+                                    <p>Date: 02/2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../imgs/projects/4.png" alt="" />
+                            <div class="overlay">
+                                <span></span>
+                                <div>
+                                    <h2>Green Day</h2>
+                                    <p>Date: 11/2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Comentários -->
+            <div id="comentarios">
+                <div class="sect sect--white">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="row__title">Comments and Opinions</h1>
+                            <h2 class="row__sub">Companies you <span class="row__sub--light">(will)</span> propably know</h2>
+                        </div>
+                        <div class="row row--margin row--text-center">
+                            <div class="col-md-8 col-sm-10 col-xs-12 row__carousel">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                                    </ol>
+            
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="item__content">
+                                                <img class="item__img" src="../comentários/sara/chart.svg" alt="Slack" /><span class="item__name">Master D</span>
+                                                <p class="item__description">
+                                                    "O seu projeto está espetacular e supera todas as expectativas. É um excelente primeiro passo para começar a construir o seu portfolio."
+                                                </p>
+                                            </div>
+                                            <div class="item__avatar1"></div>
+                                            <p class="item__people">Sara Ruivo</p>
+                                            <p class="item__occupation">e-Tutora</p>
+                                        </div>
+            
+                                        <div class="item">
+                                            <div class="item__content">
+                                                <img class="item__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Google-favicon-2015.png/150px-Google-favicon-2015.png" alt="Google" /><span class="item__name">google</span>
+                                                <p class="item__description">
+                                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                                                </p>
+                                            </div>
+                                            <div class="item__avatar2"></div>
+                                            <p class="item__people">Mary Tompson</p>
+                                            <p class="item__occupation">Ceo of Dribbble</p>
+                                        </div>
+            
+                                        <div class="item">
+                                            <div class="item__content">
+                                                <img class="item__img" src="https://www.hrexaminer.com/wp-content/uploads/2016/10/2016-10-11-hrexaminer-stackoverflow-6-xxl-sq-250px.png" alt="Stackoverflow" />
+                                                <span class="item__name">stackoverflow</span>
+                                                <p class="item__description">
+                                                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                                    imperdiet a, venenatis vitae, justo.
+                                                </p>
+                                            </div>
+                                            <div class="item__avatar3"></div>
+                                            <p class="item__people">Andrew Palmer</p>
+                                            <p class="item__occupation">Ceo of Slack</p>
+                                        </div>
+                                    </div>
+            
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <img
+                                            class="carousel-control__img"
+                                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMxLjQ5NCAzMS40OTQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMxLjQ5NCAzMS40OTQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPHBhdGggZD0iTTEwLjI3Myw1LjAwOWMwLjQ0NC0wLjQ0NCwxLjE0My0wLjQ0NCwxLjU4NywwYzAuNDI5LDAuNDI5LDAuNDI5LDEuMTQzLDAsMS41NzFsLTguMDQ3LDguMDQ3aDI2LjU1NCAgYzAuNjE5LDAsMS4xMjcsMC40OTIsMS4xMjcsMS4xMTFjMCwwLjYxOS0wLjUwOCwxLjEyNy0xLjEyNywxLjEyN0gzLjgxM2w4LjA0Nyw4LjAzMmMwLjQyOSwwLjQ0NCwwLjQyOSwxLjE1OSwwLDEuNTg3ICBjLTAuNDQ0LDAuNDQ0LTEuMTQzLDAuNDQ0LTEuNTg3LDBsLTkuOTUyLTkuOTUyYy0wLjQyOS0wLjQyOS0wLjQyOS0xLjE0MywwLTEuNTcxTDEwLjI3Myw1LjAwOXoiIGZpbGw9IiM2Zjc5ZmYiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+                                        />
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <img
+                                            class="carousel-control__img"
+                                            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDMxLjQ5IDMxLjQ5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMS40OSAzMS40OTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiPgo8cGF0aCBkPSJNMjEuMjA1LDUuMDA3Yy0wLjQyOS0wLjQ0NC0xLjE0My0wLjQ0NC0xLjU4NywwYy0wLjQyOSwwLjQyOS0wLjQyOSwxLjE0MywwLDEuNTcxbDguMDQ3LDguMDQ3SDEuMTExICBDMC40OTIsMTQuNjI2LDAsMTUuMTE4LDAsMTUuNzM3YzAsMC42MTksMC40OTIsMS4xMjcsMS4xMTEsMS4xMjdoMjYuNTU0bC04LjA0Nyw4LjAzMmMtMC40MjksMC40NDQtMC40MjksMS4xNTksMCwxLjU4NyAgYzAuNDQ0LDAuNDQ0LDEuMTU5LDAuNDQ0LDEuNTg3LDBsOS45NTItOS45NTJjMC40NDQtMC40MjksMC40NDQtMS4xNDMsMC0xLjU3MUwyMS4yMDUsNS4wMDd6IiBmaWxsPSIjNmY3OWZmIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Footer -->
+            <footer class="w3-padding-64 w3-content w3-round-xlarge" id="contact">
+                <div style="margin-left: 10%;">
+                    <h1 class="">Contact Me</h1>
+
+                    <div class="w3-row-padding">
+                        <div class="w3-section w3-half">
+                            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Esposende, PT</p>
+                            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +351 968478386</p>
+                            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: miguelsa96@hotmail.com</p>
+                        </div>
+                        <div class="w3-section w3-half">
+                            <p>
+                                <a href="https://www.instagram.com/migsa_96/" target="_blank"><i class="fa fa-instagram fa-fw w3-xxlarge w3-margin-right"></i></a>Instagram
+                            </p>
+                            <p>
+                                <a href="https://www.linkedin.com/in/miguel-s%C3%A1-39577a111/" target="_blank"><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"></i></a> Linkedin
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Progress Circle -->
+            <div class="progress-circle-container">
+                <svg class="progress-circle" viewBox="0 0 100 100">
+                <circle class="progress-background" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-circle-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="scroll-to-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19V5M5 12l7-7 7 7" />
+                </svg>
+                </div>
+            </div>
+        </div>
+        <!-- End page content -->
+        
+        <!-- Progress Circle -->
+        <script src="../js/progress_circle.js"></script> 
+
+        <!-- Carrosel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                },
+            });
+        </script>
+
+        <!-- Nav bar small -->
+        <script>
+            // Open and close sidebar
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "100%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+            
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+
+        <!-- Comentários -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+        <script  src="../js/comentarios.js"></script>
+    </body>
+</html>
