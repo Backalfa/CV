@@ -27,8 +27,11 @@
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic'>
         <link rel="stylesheet" href="../css/landingspage.css">
-        
-        <!-- Carrosel -->
+
+        <!-- Projects -->
+        <link rel="stylesheet" href="../css/projects.css">
+
+        <!-- Footer -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
@@ -62,9 +65,9 @@
                         <i class="fa fa-remove"></i>
                         </a>
                         <div class="w3-bar-block w3-center w3-padding-64">
-                        <a href="../index.html" class="w3-bar-item w3-button">Home</a>
-                        <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
-                        <a href="#contact" class="w3-bar-item w3-button">Projects</a>
+                            <img src="../imgs/logomain.png" alt="logomain" style="width: 50%; float:left">
+                            <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+                            <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
                         </div>
                     </nav>
                     <div class="w3-opacity small_screen_top">
@@ -103,64 +106,81 @@
             </div>
 
             <!-- PROJECTS -->
-            <div id="projects">
-                <main>
-                    <div class="header">
-                        <h1 class="">My Projects</h1>
-                        <p>I made these small projects for my webdesign course.</p>
-                    </div>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <img src="../imgs/projects/2.png" alt="" />
-                            <div class="overlay">
-                                <span></span>
-                                <div>
-                                    <h2>Beatriz Miranda Oriflame</h2>
-                                    <p>Date: 07/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../imgs/projects/3.png" alt="" />
-                            <div class="overlay">
-                                <span></span>
-                                <div>
-                                    <h2>All Games</h2>
-                                    <p>Date: 05/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../imgs/projects/1.png" alt="" />
-                            <div class="overlay">
-                                <span></span>
-                                <div>
-                                    <h2>Javascript/Ajax</h2>
-                                    <p>Date: 02/2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../imgs/projects/4.png" alt="" />
-                            <div class="overlay">
-                                <span></span>
-                                <div>
-                                    <h2>Green Day</h2>
-                                    <p>Date: 11/2022</p>
-                                </div>
-                            </div>
+            <hr>
+            <p class="w3-center">You can click on each project to have more information about it.</p>
+            <hr>
+            <div id="projects" class="w3-padding-64">
+                <div class="w3-row w3-center" style="margin: 0 10%;">
+                    <div class="w3-col l3 s12">
+                        <div class="w3-container">
+                            <a href="project_1.html" style="text-decoration: none;">
+                                <h1 class="projects_color">Javascript/Ajax</h1>
+                                <img src="../imgs/projects/1.png" alt="Javascript/Ajax" class="projects_img"/>
+                                <h6><strong>Date:</strong> 02/2023</h6>
+                            </a>
                         </div>
                     </div>
-                </main>
+                    <div class="w3-col l3 s12">
+                        <div class="w3-container">
+                            <a href="project_2.html" style="text-decoration: none;">
+                                <h1 class="projects_color">Beatriz Miranda Oriflame</h1>
+                                <img src="../imgs/projects/2.png" alt="Beatriz_Miranda_Oriflame" class="projects_img"/>
+                                <h6><strong>Date:</strong> 07/2023</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 s12">
+                        <div class="w3-container">
+                            <a href="project_3.html" style="text-decoration: none;">
+                                <h1 class="projects_color">All Games</h1>
+                                <img src="../imgs/projects/3.png" alt="All Games" class="projects_img"/>
+                                <h6><strong>Date:</strong> 05/2023</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 s12">
+                        <div class="w3-container">
+                            <a href="project_4.html" style="text-decoration: none;">
+                                <h1 class="projects_color">Green Day</h1>
+                                <img src="../imgs/projects/4.png" alt="Green Day" class="projects_img"/>
+                                <h6><strong>Date:</strong> 11/2022</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="small_projects" class="w3-padding-64 w3-center">
+                <div class="w3-padding-64">
+                    
+                    <div class="w3-row w3-center" style="margin: 0 10%;">
+                        <div class="w3-col l6 s12">
+                            <div class="w3-container">
+                                <h1 class="projects_color">TrivalWars/Discord Attack Detector</h1>
+                                <img src="../imgs/projects/1s.png" class="projects_img small_projects_img"/>
+                                <h6><strong>Date:</strong> 08/2023</h6>
+                            </div>
+                        </div>
+                        <div class="w3-col l6 s12">
+                            <div class="w3-container">
+                                <h1 class="projects_color">Calculate Blocked Players</h1>
+                                <img src="../imgs/projects/2s.png" class="projects_img small_projects_img"/>
+                                <h6><strong>Date:</strong> 05/2023</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>I have more scripts made within the Trival Wars game, but they do not have a user display and therefore are not "visible".</p>
+                    <hr>
+                </div>
             </div>
 
             <!-- Comentários -->
             <div id="comentarios">
-                <div class="sect sect--white">
+                <div class="sect sect--white w3-hide-small w3-hide-medium">
                     <div class="container">
                         <div class="row">
                             <h1 class="row__title">Comments and Opinions</h1>
-                            <h2 class="row__sub">Companies you <span class="row__sub--light">(will)</span> propably know</h2>
                         </div>
                         <div class="row row--margin row--text-center">
                             <div class="col-md-8 col-sm-10 col-xs-12 row__carousel">
@@ -275,25 +295,6 @@
         
         <!-- Progress Circle -->
         <script src="../js/progress_circle.js"></script> 
-
-        <!-- Carrosel -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script>
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 3,
-                    },
-                },
-            });
-        </script>
 
         <!-- Nav bar small -->
         <script>
