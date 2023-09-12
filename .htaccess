@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Verifica se o arquivo ou diretório não existe
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona para a página Error-404/index.html online
+RewriteRule ^(.*)$ https://backalfa.github.io/CV/Error-404/index.html [L]
