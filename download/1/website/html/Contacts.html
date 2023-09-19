@@ -1,0 +1,189 @@
+<?php
+session_start();
+
+// Verifica se o usuário está logado
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    // Redireciona para a página de login
+    header('Location: login.html');
+    exit();
+}
+?>
+
+<html lang="pt">
+    <head>
+        <title>Caso Prático - Final</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Miguel Sá" />
+        <link rel="website icon" type="png" href="imagens/1804352.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <script src="https://kit.fontawesome.com/d132031da6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script_contacto.js"></script>
+        <script src="js/script_maps.js"></script>
+        <link rel="stylesheet" href="css/csscontact.css" />
+        <script type="text/JavaScript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ4UYojA3LduldgOlizCQJjjpNCjHkvn4&callback=myMap"></script>
+        <style>
+            @font-face {
+                font-family: myfont;
+                src: url(fonts/GrindAndDeathDemo.ttf);
+            }
+            @font-face {
+                font-family: myfonte;
+                src: url(fonts/Neoradical.ttf);
+            }
+            @font-face {
+                font-family: fontmain;
+                src: url(fonts/Righteous-Regular.ttf);
+            }
+            @font-face {
+                font-family: mifont;
+                src: url(fonts/WrongFreeTrial.otf);
+            }
+            @font-face {
+                font-family: fontnav;
+                src: url(fonts/Poppins-Bold.ttf);
+            }
+        </style>
+    </head>
+    <body onload="carregarmapa()">
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse navtop" id="navbarNavDropdown">
+                        <ul class="gap navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contacts.html">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Estimativa de Custo.html">Budget</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg p-4">
+                        <ul class="gap navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contacts.html">Contacts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Estimativa de Custo.html">Estimativa de Custo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="bg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </nav>
+        </div>
+        <header style="font-family: fontmain;">
+            <div class="top150">
+                <table align="center" class="">
+                    <form method="POST" action="php/contacto.php" onsubmit="return validar()">
+                        <tr>
+                            <th colspan="2"><h3 class="center top25 down25">Pedido de Contacto</h3></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"><h3 class="top25">Dados</h3></th>
+                        </tr>
+                        <tr>
+                            <td align="center">Nome:</td>
+                            <td><input type="text" value="" id="nome" name="nome" onchange="validar_nome()"/></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Apelido:</td>
+                            <td><input type="text" value="" id="apelido" name="apelido" onchange="validar_apelido()"/></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Telemovel:</td>
+                            <td><input type="tel" value="" id="telemovel" name="telemovel" onchange="validar_email()"/></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Email:</td>
+                            <td><input type="email" value="" id="email" name="email" onchange="validar_telemovel()"/></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Data:</td>
+                            <td><input type="date" value="" id="datatime" style="width: 100%;" name="datetime" onchange="validar_data()"/></td>
+                        </tr>
+                        <tr>
+                            <td align="center">Motivo:</td>
+                            <td>
+                                <select id="motivo" style="width: 100%;" name="motivo">
+                                    <option value="1" selected></option>
+                                    <option value="2">Orçamento</option>
+                                    <option value="3">Dúvidas</option>
+                                    <option value="4">Outros...</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button type="submit" class="read top25" style="color: black;">Submeter</button>
+                            </td>
+                        </tr>
+                    </form>
+                </table><br />
+                <div style="text-align: center;"><span id="erro" style="display:none;color:red"></span></div>
+            </div>
+            <div align="left" class="top25 margin_left_25">
+                <input id="direccao" type="textbox" value="Lisboa" />
+                <input type="button" value="Geolocalizar" onclick="geo()" />
+                <br />
+                <br />
+                <br />
+                <div id="mapa" style="width: 300px; height: 175px;"></div>
+            </div>
+        </header>
+        <article></article>
+        <footer>
+            <nav class="FooterMenu">
+                <a href="#">Help</a>
+                <a href="#">Returns</a>
+                <a href="#">Credits</a>
+                <a href="#">Term of Use</a>
+                <a href="#">Privacy Policy</a>
+            </nav>
+        </footer>
+        <script>
+            function validar() {
+                var erroDiv = document.getElementById("erro");
+                erroDiv.style.display = "none"; // esconder a mensagem de erro inicialmente
+                
+                var nome = document.getElementsByName("nome")[0].value;
+                var apelido = document.getElementsByName("apelido")[0].value;
+                var telemovel = document.getElementsByName("telemovel")[0].value;
+                var email = document.getElementsByName("email")[0].value;
+                var datatime = document.getElementsByName("datetime")[0].value;
+                var motivo = document.getElementsByName("motivo")[0].value;
+                
+                if (nome === "" || apelido === "" || telemovel === "" || email === "" || datatime === "" || motivo === "") {
+                    erroDiv.innerHTML = "Todos os campos são obrigatórios.";
+                    erroDiv.style.display = "block"; // exibir a mensagem de erro
+                    return false; // impedir o envio do formulário
+                }
+                return true; // permitir o envio do formulário
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>

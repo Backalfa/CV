@@ -1,0 +1,29 @@
+.container{
+    position: relative;
+}
+.srcimg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagens/backgroundbodybudget.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding: 5px;
+}
+.srcimg h1{
+    text-align: right;
+    font-family: fontmain;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #B989F9;
+}
+.read{
+    color: #ffffff;
+    font-size: 24px;
+    border: 2px solid transparent;
+    text-align: center;
+    width: 120px;
+    height: auto;
+    background-image: linear-gradient(to right, #FE0279, #E820B4, #DA3FF8);
+    border-radius: 20px;
+}

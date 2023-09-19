@@ -1,0 +1,13 @@
+.read{
+    color: #ffffff;
+    font-size: 24px;
+    border: 2px solid transparent;
+    text-align: center;
+    width: 120px;
+    height: auto;
+    background-image: linear-gradient(to right, #FE0279, #E820B4, #DA3FF8);
+    border-radius: 20px;
+}
+.container{
+    position: relative;
+}
